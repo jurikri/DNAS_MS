@@ -6,7 +6,7 @@ for i = 1:size(file2,1)
        tmp = file2(i).name;
        filepath = [path2 tmp];
        msCell{ix} = dlmread(filepath, ',', 13, s);
-       msName{ix} = [path2 tmp];
+       msName{ix} = [tmp];
        ix = ix+1;
     catch
     end
